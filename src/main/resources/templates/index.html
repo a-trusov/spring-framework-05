@@ -6,10 +6,12 @@
 </head>
 <body>
     <p th:text = "'Синглтон Скоуп сказал: ' + ${singletonGreeting}"></p>
-    <p th:text = "'Притотип Скоуп Первый сказал: ' + ${prototype1Greeting}"></p>
-    <p th:text = "'Притотип Скоуп Второй сказал: ' + ${prototype2Greeting}"></p>
+    <p th:text = "'Прототип Скоуп Первый сказал: ' + ${prototype1Greeting}"></p>
+    <p th:text = "'Прототип Скоуп Второй сказал: ' + ${prototype2Greeting}"></p>
     <p th:text = "'Сешн Скоуп сказал: ' + ${sessionGreeting}"></p>
     <p th:text = "'Реквест Скоуп сказал: ' + ${requestGreeting}"></p>
+
+    <p th:text = "'Кстати тут еще есть твои друзья ' + ${friend1} + ' и ' + ${friend2} + '. Они тоже передают привет!'"></p>
 
 </body>
 </html>

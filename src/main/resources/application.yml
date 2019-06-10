@@ -1,3 +1,13 @@
 greetings:
   first-greeting: Привет
   re-greeting: Рад снова тебя видеть
+
+
+condition:
+  friend: Игорь
+  #friend: Алиса
+
+spring:
+  profiles:
+    active: Вася
+    #active: Аня
