@@ -39,8 +39,8 @@ public class GreetingController {
     @GetMapping("/")
     public String greetingPage(Model model) {
         model.addAttribute("singletonGreeting", singletonGreetingService.greeting());
-        model.addAttribute("prototype1Greeting", prototypeGreetingService1.isFirstGreetingSuccess()? prototypeGreetingService2.greeting(): "Пока жду");
-        model.addAttribute("prototype2Greeting", prototypeGreetingService1.greeting());
+        model.addAttribute("prototype2Greeting", prototypeGreetingService1.isFirstGreetingSuccess()? prototypeGreetingService2.greeting(): "Пока жду");
+        model.addAttribute("prototype1Greeting", prototypeGreetingService1.greeting());
         model.addAttribute("sessionGreeting", sessionGreetingService.greeting());
         model.addAttribute("requestGreeting", requestGreetingService.greeting());
         model.addAttribute("friend1", friend1.getName());

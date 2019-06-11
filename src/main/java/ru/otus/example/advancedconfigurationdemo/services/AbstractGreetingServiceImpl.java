@@ -27,12 +27,6 @@ public abstract class AbstractGreetingServiceImpl implements GreetingService {
         return currentGreeting();
     }
 
-    @Override
-    public String greetingPersonal(String name) {
-
-        return String.format("%s %s", currentGreeting(), name);
-    }
-
     private synchronized String currentGreeting() {
         String greeting = isFirstGreetingSuccess ? reGreeting : firstGreeting;
         isFirstGreetingSuccess = true;

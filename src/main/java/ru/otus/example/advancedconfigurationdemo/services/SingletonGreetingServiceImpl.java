@@ -1,11 +1,9 @@
 package ru.otus.example.advancedconfigurationdemo.services;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
-@Qualifier("SingletonGreetingService")
 @Scope("singleton")
-@Service
+@Service("SingletonGreetingService")
 public class SingletonGreetingServiceImpl extends AbstractGreetingServiceImpl {
 }
