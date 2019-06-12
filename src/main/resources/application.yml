@@ -4,13 +4,13 @@ greetings:
 
 
 condition:
-  friend: Игорь
-  #friend: Алиса
+  #friend: Игорь
+  friend: Алиса
 
 spring:
   profiles:
-    active: Вася
-    #active: Аня
+    #active: Вася
+    active: Аня
 
   shell:
     interactive:

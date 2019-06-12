@@ -25,7 +25,6 @@ public class CustomLifeCycleBean implements InitializingBean, DisposableBean, Be
     @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println("Шаг #6: InitializingBean.afterPropertiesSet\n");
-        Thread.sleep(10);
     }
 
     public void customInitMethod() throws Exception {
