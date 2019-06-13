@@ -4,13 +4,13 @@ greetings:
 
 
 condition:
-  #friend: Игорь
-  friend: Алиса
+  friend: Игорь
+  #friend: Алиса
 
 spring:
   profiles:
-    #active: Вася
-    active: Аня
+    active: Вася
+    #active: Аня
 
   shell:
     interactive:
@@ -20,7 +20,7 @@ logging:
   level:
     root: ERROR
 
-life-cycle-demo-enabled: true
+life-cycle-demo-enabled: false
 
 ---
 spring:
